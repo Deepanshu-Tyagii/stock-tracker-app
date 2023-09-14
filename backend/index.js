@@ -32,8 +32,8 @@ function updateStockPrices() {
 }
 
 updateStockPrices();
-//update generated random stock price in every 1 min
-setInterval(updateStockPrices, 60000);
+//update generated random stock price in every 30 sec
+setInterval(updateStockPrices, 30000);
 
 // Get the stock price for a specific stock
 app.get('/api/stocks/:stock', (req, res) => {
