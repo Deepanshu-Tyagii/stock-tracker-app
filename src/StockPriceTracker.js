@@ -10,7 +10,7 @@ const StockPriceTracker = () => {
   useEffect(() => {
     const fetchStockPrice = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/stocks/${selectedStock}`);
+        const response = await axios.get(`https://stock-tracker-app-7ojs.vercel.app/api/stocks/${selectedStock}`);
         // console.log(response);
         setStockPrice(response.data.price);
       } catch (error) {
