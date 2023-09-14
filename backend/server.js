@@ -38,7 +38,7 @@ setInterval(updateStockPrices, 60000);
 app.get('/api/stocks/:stock', (req, res) => {
   const { stock } = req.params;
   const stockData = stocksData[stock];
-  console.log(stockData);
+  // console.log(stockData);
   if (stockData) {
     res.json({ price: stockData.price });
   } else {
